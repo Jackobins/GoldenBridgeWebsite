@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 5%;
+}
+
+.nav--buttons {
+  position: fixed;
+  right: 5%;
+}
+
+.nav--buttons > button {
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: inherit;
+  border: none;
+}
+
+.nav--buttons > button:hover {
+  background-color: lightgrey;
+}
+
+.picbar {
+  height: 500px;
+  background-color: lightblue;
+}
