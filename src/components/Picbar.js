@@ -4,7 +4,8 @@ import "../styles.css";
 export default function Picbar() {
   return (
     <div className="picbar">
-      <h1>Golden Bridge</h1>
+      <h1>GOLDEN BRIDGE</h1>
+      <div className="color-overlay"></div>
     </div>
   );
 }

@@ -5,13 +5,17 @@
 nav {
   display: flex;
   align-items: center;
+  height: 65px;
+  padding: 20px;
+}
+
+nav > h2 {
   position: fixed;
-  left: 5%;
 }
 
 .nav--buttons {
   position: fixed;
-  right: 5%;
+  right: 2%;
 }
 
 .nav--buttons > button {
@@ -26,7 +30,32 @@ nav {
   background-color: lightgrey;
 }
 
+.color-overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 100, 255, 0.45), rgba(0, 100, 255, 0.45));
+  opacity: 1;
+}
+
 .picbar {
   height: 500px;
-  background-color: lightblue;
+  width: 100%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.picbar > h1 {
+  text-align: center;
+  z-index: 0;
+  font-size: 60px;
+  position: relative;
+  top: 50%;
+  letter-spacing: 3px;
+}
+
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
 }
