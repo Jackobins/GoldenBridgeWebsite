@@ -5,18 +5,16 @@
 nav {
   display: flex;
   align-items: center;
-  height: 65px;
+  height: 20px;
+  margin-top: 30px;
+  width: 100%;
   padding: 20px;
   background-color: #fff;
   z-index: 1;
 }
 
-nav > h2 {
-  position: fixed;
-}
-
 .nav--buttons {
-  position: fixed;
+  position: absolute;
   right: 2%;
 }
 
@@ -43,11 +41,16 @@ nav > h2 {
   letter-spacing: 3px;
 }
 
+.color-overlay > h1 {
+  padding: 100px;
+}
+
 .color-overlay > button {
   font-size: 25px;
   background-color: #fff;
   border-radius: 5px;
   border: none;
+  width: 150px;
 }
 
 .color-overlay > button:hover {
