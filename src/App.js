@@ -1,10 +1,14 @@
 import React from "react";
-import Header from "./components/Header";
+import Intro from "./components/Intro";
+import Navbar from "./components/Navbar";
+import Picbar from "./components/Picbar";
 
 export default function App() {
   return (
     <div>
-      <Header />
+      <Navbar />
+      <Picbar />
+      <Intro />
     </div>
   );
 }

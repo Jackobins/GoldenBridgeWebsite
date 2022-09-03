@@ -3,9 +3,9 @@ import "../styles.css";
 
 export default function Picbar() {
   return (
-    <div className="picbar">
+    <div className="color-overlay">
       <h1>GOLDEN BRIDGE</h1>
-      <div className="color-overlay"></div>
+      <button>Shop</button>
     </div>
   );
 }

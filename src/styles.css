@@ -7,6 +7,8 @@ nav {
   align-items: center;
   height: 65px;
   padding: 20px;
+  background-color: #fff;
+  z-index: 1;
 }
 
 nav > h2 {
@@ -31,31 +33,28 @@ nav > h2 {
 }
 
 .color-overlay {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(rgba(0, 100, 255, 0.45), rgba(0, 100, 255, 0.45));
-  opacity: 1;
-}
-
-.picbar {
   height: 500px;
   width: 100%;
   color: #fff;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-}
-
-.picbar > h1 {
+  background: linear-gradient(rgba(0, 100, 255, 0.45), rgba(0, 100, 255, 0.45));
+  opacity: 1;
   text-align: center;
-  z-index: 0;
-  font-size: 60px;
-  position: relative;
-  top: 50%;
+  font-size: 30px;
   letter-spacing: 3px;
 }
 
-.container {
+.color-overlay > button {
+  font-size: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.color-overlay > button:hover {
+  background-color: lightgrey;
+}
+
+.content {
+  width: 60%;
   margin-left: 50px;
-  margin-right: 50px;
 }
