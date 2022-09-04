@@ -5,7 +5,7 @@ export default function Picbar() {
   return (
     <div className="color-overlay">
       <h1>GOLDEN BRIDGE</h1>
-      <button>Shop</button>
+      <button>Order</button>
     </div>
   );
 }
