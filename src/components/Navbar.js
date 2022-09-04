@@ -7,7 +7,7 @@ export default function Navbar() {
       <h2>Golden Bridge</h2>
       <div className="nav--buttons">
         <button>Home</button>
-        <button>Products</button>
+        <button>Order</button>
         <button>Contact</button>
       </div>
     </nav>

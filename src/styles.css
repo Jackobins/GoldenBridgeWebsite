@@ -38,11 +38,12 @@ nav {
   opacity: 1;
   text-align: center;
   font-size: 30px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 
 .color-overlay > h1 {
-  padding: 100px;
+  padding: 150px;
+  height: 10px;
 }
 
 .color-overlay > button {
@@ -51,6 +52,7 @@ nav {
   border-radius: 5px;
   border: none;
   width: 150px;
+  height: 40px;
 }
 
 .color-overlay > button:hover {
