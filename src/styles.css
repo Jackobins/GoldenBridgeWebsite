@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+#body {
+  padding-bottom: 50px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -77,4 +85,25 @@ nav > h2:hover {
 
 .content > p {
   margin-top: 10px;
+}
+
+.bottombar {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  margin-top: 30px;
+  background-color: #424242;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+}
+
+.contacts {
+  height: calc(100vh - 190px);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact {
+  margin-top: 30px;
 }
