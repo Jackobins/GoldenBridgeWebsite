@@ -2,6 +2,7 @@ import React from "react";
 import "../styles.css";
 import { useNavigate } from "react-router-dom";
 import companyLogo from "../images/gbLogo.png";
+import cart from "../images/cartIcon.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -38,6 +39,9 @@ export default function Navbar() {
           }}
         >
           Contact
+        </button>
+        <button>
+          <img src={cart} className="cartIcon" />
         </button>
       </div>
     </nav>
