@@ -1,14 +1,19 @@
 import React from "react";
-import Intro from "./components/Intro";
+import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
-import Picbar from "./components/Picbar";
+import OrderPage from "./components/OrderPage";
+import ContactPage from "./components/ContactPage";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
-      <Picbar />
-      <Intro />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/order" element={<OrderPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
     </div>
   );
 }
