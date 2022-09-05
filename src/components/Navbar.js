@@ -1,19 +1,22 @@
 import React from "react";
 import "../styles.css";
 import { useNavigate } from "react-router-dom";
+import companyLogo from "../images/gbLogo.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
 
   return (
     <nav>
-      <h2
+      <div
+        className="logo"
         onClick={() => {
           navigate("/");
         }}
       >
-        Golden Bridge
-      </h2>
+        <img src={companyLogo} className="nav--image" />
+        <h2>Golden Bridge</h2>
+      </div>
       <div className="nav--buttons">
         <button
           onClick={() => {

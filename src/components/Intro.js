@@ -1,9 +1,10 @@
 import React from "react";
 import "../styles.css";
+import companyLogo from "../images/gbLogoNew.png";
 
 export default function Intro() {
   return (
-    <div>
+    <div className="intro">
       <div className="content">
         <h1>WELCOME TO GOLDEN BRIDGE</h1>
         <p>
@@ -15,9 +16,11 @@ export default function Intro() {
         </p>
         <p>
           We are located in Coquitlam, British Columbia, Canada, and currently
-          provide service to the cities of Vancouver, Richmond, Surrey and Edmonton.
+          provide service to the cities of Vancouver, Richmond, Surrey and
+          Edmonton.
         </p>
       </div>
+      <img src={companyLogo} className="intro--image" />
     </div>
   );
 }
