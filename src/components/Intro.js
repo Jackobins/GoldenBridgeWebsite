@@ -15,7 +15,7 @@ export default function Intro() {
         </p>
         <p>
           We are located in Coquitlam, British Columbia, Canada, and currently
-          provide service to the cities of Vancouver, Richmond, and Surrey.
+          provide service to the cities of Vancouver, Richmond, Surrey and Edmonton.
         </p>
       </div>
     </div>
