@@ -7,5 +7,10 @@ export default function OrderPage() {
     return <Card key={item.id} item={item} />;
   });
 
-  return <div className="cards-list">{cards}</div>;
+  return (
+    <div>
+      <div className="cards-list">{cards}</div>
+      <button className="addToCart">Add To Cart</button>
+    </div>
+  );
 }

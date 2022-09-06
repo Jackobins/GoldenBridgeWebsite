@@ -40,7 +40,11 @@ export default function Navbar() {
         >
           Contact
         </button>
-        <button>
+        <button
+          onClick={() => {
+            navigate("/cart");
+          }}
+        >
           <img src={cart} className="cartIcon" />
         </button>
       </div>

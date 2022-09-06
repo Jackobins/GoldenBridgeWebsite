@@ -136,7 +136,7 @@ nav {
   width: 150px;
   text-align: center;
   line-height: 80px;
-  border-radius: 8px;
+  border-radius: 15px;
   border-color: #424242;
   border-style: solid;
 }
@@ -146,7 +146,6 @@ nav {
   margin: auto;
   width: 75%;
   padding: 15px;
-  height: calc(100vh - 130px);
 }
 
 .counter {
@@ -186,4 +185,22 @@ nav {
   justify-content: center;
   align-items: center;
   color: #262626;
+}
+
+.addToCart {
+  background-color: rgba(0, 100, 255, 0.6);
+  color: #fff;
+  height: 50px;
+  width: 400px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  left: 34%;
+  position: relative;
+  font-size: 20px;
+}
+
+.addToCart:hover {
+  cursor: pointer;
+  background-color: rgba(58, 130, 237, 0.6);
+  transition: 0.2s;
 }
