@@ -210,3 +210,17 @@ nav {
   background-color: rgba(82, 151, 254, 0.6);
   transition: 0.2s;
 }
+
+.cartCard {
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 15px;
+  border-color: #424242;
+  border-style: solid;
+}
+
+.cartPage {
+  height: calc(100vh - 130px);
+}

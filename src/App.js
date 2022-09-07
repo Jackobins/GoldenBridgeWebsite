@@ -8,31 +8,12 @@ import BottomBar from "./components/BottomBar";
 import CartPage from "./components/CartPage";
 
 export default function App() {
-  var selecteds = [
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ];
+  var counts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-  function changeSelected(newSelecteds) {
-    selecteds = newSelecteds;
+  function changeSelected(selecteds) {
+    for (var i = 0; i < selecteds.length; i++) {
+      counts[selecteds[i]]++;
+    }
   }
 
   return (
@@ -42,12 +23,10 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route
           path="/order"
-          element={
-            <OrderPage selecteds={selecteds} handleClick={changeSelected} />
-          }
+          element={<OrderPage handleClick={changeSelected} />}
         />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/cart" element={<CartPage />} />
+        <Route path="/cart" element={<CartPage counts={counts} />} />
       </Routes>
       <BottomBar />
     </div>
