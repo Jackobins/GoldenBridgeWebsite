@@ -21,9 +21,6 @@ export default function ContactPage() {
         <ul>
           <strong>Phone:</strong> 236-518-9234
         </ul>
-        <ul>
-          <strong>Instagram:</strong> @jack.wan9
-        </ul>
       </div>
     </div>
   );

@@ -8,12 +8,40 @@ import BottomBar from "./components/BottomBar";
 import CartPage from "./components/CartPage";
 
 export default function App() {
-  var counts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  const [counts, setCounts] = React.useState([
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  ]);
 
-  function changeSelected(selecteds) {
+  function changeCounts(selecteds) {
+    const newState = counts;
     for (var i = 0; i < selecteds.length; i++) {
-      counts[selecteds[i]]++;
+      newState[selecteds[i]]++;
     }
+    setCounts(newState);
+  }
+
+  function add(index) {
+    const newState = counts;
+    newState[index]++;
+    setCounts(newState);
+  }
+
+  function subtract(index, amount) {
+    const newState = counts;
+    if (newState[index] <= amount) {
+      newState[index] = 0;
+    } else {
+      newState[index] -= amount;
+    }
+    setCounts(newState);
+  }
+
+  function reset() {
+    const newState = counts;
+    for (var i = 0; i < 20; i++) {
+      newState[i] = 0;
+    }
+    setCounts(newState);
   }
 
   return (
@@ -23,10 +51,20 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route
           path="/order"
-          element={<OrderPage handleClick={changeSelected} />}
+          element={<OrderPage handleClick={changeCounts} />}
         />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/cart" element={<CartPage counts={counts} />} />
+        <Route
+          path="/cart"
+          element={
+            <CartPage
+              counts={counts}
+              add={add}
+              subtract={subtract}
+              reset={reset}
+            />
+          }
+        />
       </Routes>
       <BottomBar />
     </div>
