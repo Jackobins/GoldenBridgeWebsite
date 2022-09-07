@@ -2,10 +2,13 @@ import React from "react";
 import "../styles.css";
 
 export default function OrderCard(props) {
-  const [selected, setSelected] = React.useState(false);
+  const [selected, setSelected] = React.useState(props.selected);
 
   function toggleSelected() {
     setSelected((prevSelected) => !prevSelected);
+    {
+      props.handleClick(props.item.id);
+    }
   }
 
   return (

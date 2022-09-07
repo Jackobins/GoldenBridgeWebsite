@@ -8,12 +8,44 @@ import BottomBar from "./components/BottomBar";
 import CartPage from "./components/CartPage";
 
 export default function App() {
+  var selecteds = [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ];
+
+  function changeSelected(newSelecteds) {
+    selecteds = newSelecteds;
+  }
+
   return (
     <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/order" element={<OrderPage />} />
+        <Route
+          path="/order"
+          element={
+            <OrderPage selecteds={selecteds} handleClick={changeSelected} />
+          }
+        />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/cart" element={<CartPage />} />
       </Routes>
