@@ -135,10 +135,16 @@ nav {
   height: 100px;
   width: 150px;
   text-align: center;
-  line-height: 80px;
+  line-height: 100px;
   border-radius: 15px;
   border-color: #424242;
   border-style: solid;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: lightgray;
+  transition: 0.2s;
 }
 
 .cards-list {
@@ -201,6 +207,6 @@ nav {
 
 .addToCart:hover {
   cursor: pointer;
-  background-color: rgba(58, 130, 237, 0.6);
+  background-color: rgba(82, 151, 254, 0.6);
   transition: 0.2s;
 }

@@ -1,23 +1,22 @@
 import React from "react";
 import "../styles.css";
 
-export default function Card(props) {
-  const [count, setCount] = React.useState(0);
+export default function OrderCard(props) {
+  const [selected, setSelected] = React.useState(false);
 
-  function add() {
-    setCount((prevCount) => prevCount + 1);
-  }
-
-  function subtract() {
-    setCount((prevCount) => {
-      return prevCount == 0 ? 0 : prevCount - 1;
-    });
+  function toggleSelected() {
+    setSelected((prevSelected) => !prevSelected);
   }
 
   return (
-    <div className="card">
+    <div
+      className="card"
+      style={{ backgroundColor: selected && "grey" }}
+      onClick={toggleSelected}
+    >
       <h3>{props.item.name}</h3>
-      <div className="counter">
+
+      {/* <div className="counter">
         <button className="counter--minus" onClick={subtract}>
           -
         </button>
@@ -27,7 +26,7 @@ export default function Card(props) {
         <button className="counter--plus" onClick={add}>
           +
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
