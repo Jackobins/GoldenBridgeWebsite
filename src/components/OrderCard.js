@@ -18,18 +18,6 @@ export default function OrderCard(props) {
       onClick={toggleSelected}
     >
       <h3>{props.item.name}</h3>
-
-      {/* <div className="counter">
-        <button className="counter--minus" onClick={subtract}>
-          -
-        </button>
-        <div className="counter--count">
-          <h3>{count}</h3>
-        </div>
-        <button className="counter--plus" onClick={add}>
-          +
-        </button>
-      </div> */}
     </div>
   );
 }

@@ -244,6 +244,10 @@ nav {
   transition: 0.2s;
 }
 
+.placeOrder:disabled {
+  background-color: grey;
+}
+
 .cartCardsList {
   margin-left: 160px;
   width: 30%;
@@ -272,4 +276,26 @@ nav {
 
 .deleteimg:hover {
   cursor: pointer;
+}
+
+.form--inputs {
+  margin-left: 145px;
+  margin-top: 80px;
+  display: grid;
+  grid-template: 50px 50px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+  position: fixed;
+}
+
+.form--inputs > input {
+  border-radius: 10px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form > h2 {
+  position: fixed;
+  margin-left: 140px;
+  margin-top: 40px;
 }
