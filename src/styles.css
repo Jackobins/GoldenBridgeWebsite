@@ -154,6 +154,10 @@ nav {
   padding: 15px;
 }
 
+.orderPage {
+  text-align: center;
+}
+
 .counter {
   display: flex;
   align-items: flex-end;
@@ -200,7 +204,6 @@ nav {
   width: 400px;
   border-radius: 30px;
   margin-bottom: 20px;
-  left: 34%;
   position: relative;
   font-size: 20px;
 }

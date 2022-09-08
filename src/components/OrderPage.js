@@ -53,7 +53,8 @@ export default function OrderPage(props) {
   });
 
   return (
-    <div>
+    <div className="orderPage">
+      <h1>Select Your Products</h1>
       <div className="cards-list">{cards}</div>
       <button className="addToCart" onClick={sendToCart}>
         Add To Cart
