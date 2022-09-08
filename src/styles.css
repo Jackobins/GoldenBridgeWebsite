@@ -249,6 +249,7 @@ nav {
 
 .placeOrder:disabled {
   background-color: grey;
+  cursor: auto;
 }
 
 .cartCardsList {
